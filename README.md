@@ -12,6 +12,8 @@ document.getElementById("text").innerHTML = "Text added by JavaScript code";
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
 <script src="./src/app.js"></script>
 
+[Link to page](https://jeffcslentz.github.io/algolia-takehome/)
+
 You can use the [editor on GitHub](https://github.com/JeffCSlentz/algolia-takehome/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
