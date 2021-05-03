@@ -10,7 +10,7 @@ document.getElementById("text").innerHTML = "Text added by JavaScript code";
 
 <script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
-<script src="/src/app.js"></script>
+<script src="./src/app.js"></script>
 
 You can use the [editor on GitHub](https://github.com/JeffCSlentz/algolia-takehome/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
