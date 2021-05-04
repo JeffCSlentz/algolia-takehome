@@ -2,7 +2,7 @@
 
 With over 80,000 sounds from World of Warcraft, it can be hard to find the right one. Using Algolia, I built a website to facilitate faster and easier searches.
 
-Try it out! 
+Try it out! Search by Boss (`lich king`), Expansion (`bc`), or Dungeon/Instance (`icc`).
 
 [bosstalk.dev](https://bosstalk.dev)
 
