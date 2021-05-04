@@ -1,40 +1,47 @@
-## Boss Talk Search using Algolia
+# Boss Talk Search using Algolia
 
-Try it out! [bosstalk.dev](https://bosstalk.dev)
-You can use the [editor on GitHub](https://github.com/JeffCSlentz/algolia-takehome/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+With over 80,000 sounds from World of Warcraft, it can be hard to find the right one. Using Algolia, I built a website to facilitate faster and easier searches.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Try it out! 
 
-[App](./index.html)
+[bosstalk.dev](https://bosstalk.dev)
 
-### Markdown
+This is a companion website to [BossTalk](https://github.com/JeffCSlentz/BossTalk), a Discord bot that plays World of Warcraft sounds.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## The Problem
 
-```markdown
-Syntax highlighted code block
+Using the discord bot alone makes searching for a specific sound tedious. The full user flow is shown below:
 
-# Header 1
-## Header 2
-### Header 3
+First, a user has to search for creatures with `!info creature_name`. Partial matches are then listed out.
 
-- Bulleted
-- List
+![boss-talk, searching for creatures](resources/user-flow-1.png)
 
-1. Numbered
-2. List
+With an exact match, like `!info aargoss`, the creature and it's sounds can then be displayed.
 
-**Bold** and _Italic_ and `Code` text
+![boss-talk, an exact match](resources/user-flow-2.png)
 
-[Link](url) and ![Image](src)
-```
+Finally, the user has to type out each sound id they'd like to try.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+![boss-talk, testing sounds](resources/user-flow-3.png)
 
-### Jekyll Themes
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/JeffCSlentz/algolia-takehome/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+## The Solution
 
-### Support or Contact
+With a front end powered by Algolia's search, [bosstalk.dev](https://bosstalk.dev) lets a user search and test out sounds quicker and easier.
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+## Improvements
+
++ The website isn't responsive to mobile portrait layouts yet.
++ The Algolia search index should be by sound instead of creature, with deduplication enabled.
+
+## Feedback for Algolia
+
+The ease of uploading data to Algolia was great. The amount of options were a bit overwhelming, but it was all well organized and the documentation was, of course, easy to search. 
+
+Actually implementing the search from the website was incredibly easy. There were only a few options to provide liek an api-key and index name. The search results (hits) came back in an easy to understand object structure. 
+
+In the short amount of time I worked on the project, I unfortunately couldn't find a way to flatten my Algolia index without writing a lot more front-end code.
+
+## Customer Questions
+
+[Here are the sample customer questions answered](customer-questions-answered.md)
