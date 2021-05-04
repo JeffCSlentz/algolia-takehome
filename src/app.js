@@ -1,33 +1,29 @@
 const search = instantsearch({
-    indexName: 'demo_ecommerce',
-    searchClient: algoliasearch('B1G2GM9NG0', 'aadef574be1f9252bb48d4ea09b5cfe5'),
+    indexName: 'sounds_bosstalk',
+    searchClient: algoliasearch('834NFOMXJB', 'bb368f15d86816f435ce20d0b2880511'),
   });
   
   search.addWidgets([
     instantsearch.widgets.searchBox({
       container: '#searchbox',
     }),
-    instantsearch.widgets.clearRefinements({
-      container: '#clear-refinements',
-    }),
-    instantsearch.widgets.refinementList({
-      container: '#brand-list',
-      attribute: 'brand',
-    }),
     instantsearch.widgets.hits({
       container: '#hits',
       templates: {
         item: `
-          <div>
-            <img src="{{image}}" align="left" alt="{{name}}" />
-            <div class="hit-name">
-              {{#helpers.highlight}}{ "attribute": "name" }{{/helpers.highlight}}
+          <div class="hit-title">
+            <div class="primary-attribute hit-creatureName">
+                {{#helpers.highlight}}{ "attribute": "creatureName" }{{/helpers.highlight}}
             </div>
-            <div class="hit-description">
-              {{#helpers.highlight}}{ "attribute": "description" }{{/helpers.highlight}}
+            <div class="secondary-attribute">
+                {{#helpers.highlight}}{ "attribute": "expansion" }{{/helpers.highlight}}
+            </div>            
+            <div class="secondary-attribute">
+                {{#helpers.highlight}}{ "attribute": "location" }{{/helpers.highlight}}
             </div>
-            <div class="hit-price">\${{price}}</div>
+
           </div>
+          
         `,
       },
     }),
