@@ -21,7 +21,7 @@ function addSounds(hit){
             ${element.location}
           </div>
           <audio class="sound-player" controls preload="none">
-            <source src="https://155.138.217.103:8080/${element.filePath}" type="audio/ogg">
+            <source src="../BossTalk/${element.filePath}" type="audio/ogg">
           </audio>
         </div>
       </div>
