@@ -3,7 +3,11 @@ body {
     padding: 1em;
     background: linear-gradient(360deg, rgba(214, 214, 231, 0.5) 0%, rgba(245, 245, 250, 0.5) 100%), linear-gradient(0deg, #FFFFFF, #FFFFFF);
     min-height: 100vh;
+    width: calc(100vw - 34px);
   }
+html{
+  font-size:14px
+}
   
   .ais-ClearRefinements {
     margin: 1em 0;
@@ -54,35 +58,49 @@ body {
   .ais-Highlight-highlighted, .ais-Snippet-highlighted {
     background-color: #c8ddf5;
   }
+
   .primary-attribute{
       font-weight: bold;
   }
+
   .ais-Hits-list{
       display: list-item
   }
+
   .ais-Hits-item {
+    display:block;
     width: auto;
     border: 0px;
     box-shadow: none;
     border-bottom: 1px solid lightgray;
-    padding: 1em 0 1em 0;
     margin: 0;
-
+    padding: 0;
+    font-size: 14px
   }
 
   .ais-SearchBox{
-      margin: 1em 4em 1em
+      margin: 1em 8em;
   }
 
   .header-panel{
       text-align: center;
   }
+
   .hit-title{
       display: flex;
-      width: 100%
+      width: 100%;
+      padding: 1em 0 1em 0;
+      cursor: pointer;
+      transition: 0.3s
   }
+
+  .hit-title:hover{
+    background-color: rgb(242, 250, 255);
+  }
+
   .primary-attribute{
-      width: 80%
+      width: 80%;
+      padding: 0 5px
   }
 
   .secondary-attribute{
@@ -90,13 +108,45 @@ body {
       padding: 0 1em;
       text-align: right;
   }
+
   .hits-container{
       background-color: white;
+      border-radius: 5px
   }
   
   .ais-Hits{
-      padding: 1em 2em 1em
+      padding: 2em
   }
+
   .ais-Hits-item:last-of-type{
       border-bottom: 0;
+  }
+  
+  .ais-Highlight-highlighted{
+      padding: 0;
+      font-size: 14px;
+  }
+
+  .sound-item{
+    padding: 1em;
+    display: flex;
+    justify-content: space-between
+  }
+
+  .sound-player{
+    height: 2em;
+
+  }
+
+  .sound-detail{
+    padding:0 1em;
+    margin: auto 0
+  }
+
+  .sound-left{
+    display:flex;
+  }
+
+  .sound-right{
+    display: flex;
   }
