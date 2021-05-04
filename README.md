@@ -1,19 +1,6 @@
-## Welcome to GitHub Pages
+## Boss Talk Search using Algolia
 
-<div id="text"></div>
- 
-<script>
-document.getElementById("text").innerHTML = "Text added by JavaScript code";
-</script>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/algoliasearch@4/dist/algoliasearch-lite.umd.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/instantsearch.js@4"></script>
-<script src="./src/app.js"></script>
-
-[Link to page](https://jeffcslentz.github.io/algolia-takehome/)
-
+Try it out! [bosstalk.dev](https://bosstalk.dev)
 You can use the [editor on GitHub](https://github.com/JeffCSlentz/algolia-takehome/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.

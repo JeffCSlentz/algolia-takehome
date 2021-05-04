@@ -49,10 +49,10 @@ const search = instantsearch({
                   ${instantsearch.highlight({ attribute: 'creatureName', hit:hit})}
               </div>
               <div class="secondary-attribute">
-                  ${hit.positions[0].expansion}
+                ${(hit.positions.length > 0 && hit.positions[0].expansion) ? hit.positions[0].expansion : ""}
               </div>            
               <div class="secondary-attribute">
-                ${hit.positions[0].location}
+                ${(hit.positions.length > 0 && hit.positions[0].location) ? hit.positions[0].location : ""}
               </div>
           
             </div>
