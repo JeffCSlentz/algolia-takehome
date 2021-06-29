@@ -31,8 +31,8 @@ function addSounds(hit){
 }
 
 const search = instantsearch({
-    indexName: 'creatures_bosstalk',
-    searchClient: algoliasearch('834NFOMXJB', 'bb368f15d86816f435ce20d0b2880511'),
+    indexName: 'creatures',
+    searchClient: algoliasearch('4BW0HRHKRA', '8027b1c9336bcec3c310933692cc3122'),
   });
   
   search.addWidgets([
